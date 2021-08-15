@@ -11,3 +11,14 @@
 .small-caps{
     font-variant: small-caps;
 }
+
+.effect div {
+    background-size: 100% 200%;
+    background-position: 0 -100%;
+    background-image: linear-gradient(to top, transparent 50%, #1D4ED8 50%);
+}
+
+.effect div:hover {
+    background-position: 0 0;
+    border-radius: 0.5rem;
+}
