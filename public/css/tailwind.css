@@ -15,10 +15,23 @@
 .effect div {
     background-size: 100% 200%;
     background-position: 0 -100%;
-    background-image: linear-gradient(to top, transparent 50%, #1D4ED8 50%);
+    background-image: linear-gradient(to top, transparent 50%, #2856ce 50%);
+/*  #1D4ED8  */
 }
 
 .effect div:hover {
     background-position: 0 0;
     border-radius: 0.5rem;
+}
+
+.card:hover .text{
+    transform: translateY(0);
+}
+
+.snap-scroll{
+    scroll-snap-type: x mandatory;
+}
+
+.snap-scroll-start{
+    scroll-snap-align: start;
 }

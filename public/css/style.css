@@ -18115,6 +18115,18 @@ video {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000000 100%),url('../img/social.jpg');
 }
 
+.bg-php {
+  background-image: url('../img/php.jpg');
+}
+
+.bg-geo {
+  background-image: url('../img/qgis1.jpg');
+}
+
+.bg-soon {
+  background-image: url('../img/soon.png');
+}
+
 .from-transparent {
   --tw-gradient-from: transparent;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -32583,12 +32595,26 @@ video {
 .effect div {
   background-size: 100% 200%;
   background-position: 0 -100%;
-  background-image: linear-gradient(to top, transparent 50%, #1D4ED8 50%);
+  background-image: linear-gradient(to top, transparent 50%, #2856ce 50%);
+  /*  #1D4ED8  */
 }
 
 .effect div:hover {
   background-position: 0 0;
   border-radius: 0.5rem;
+}
+
+.card:hover .text{
+  transform: translateY(0);
+}
+
+.snap-scroll{
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+}
+
+.snap-scroll-start{
+  scroll-snap-align: start;
 }
 
 @media (min-width: 640px) {
@@ -50051,6 +50077,18 @@ video {
 
   .sm\:bg-social {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000000 100%),url('../img/social.jpg');
+  }
+
+  .sm\:bg-php {
+    background-image: url('../img/php.jpg');
+  }
+
+  .sm\:bg-geo {
+    background-image: url('../img/qgis1.jpg');
+  }
+
+  .sm\:bg-soon {
+    background-image: url('../img/soon.png');
   }
 
   .sm\:from-transparent {
@@ -81618,6 +81656,18 @@ video {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000000 100%),url('../img/social.jpg');
   }
 
+  .md\:bg-php {
+    background-image: url('../img/php.jpg');
+  }
+
+  .md\:bg-geo {
+    background-image: url('../img/qgis1.jpg');
+  }
+
+  .md\:bg-soon {
+    background-image: url('../img/soon.png');
+  }
+
   .md\:from-transparent {
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -113181,6 +113231,18 @@ video {
 
   .lg\:bg-social {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000000 100%),url('../img/social.jpg');
+  }
+
+  .lg\:bg-php {
+    background-image: url('../img/php.jpg');
+  }
+
+  .lg\:bg-geo {
+    background-image: url('../img/qgis1.jpg');
+  }
+
+  .lg\:bg-soon {
+    background-image: url('../img/soon.png');
   }
 
   .lg\:from-transparent {
@@ -144748,6 +144810,18 @@ video {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000000 100%),url('../img/social.jpg');
   }
 
+  .xl\:bg-php {
+    background-image: url('../img/php.jpg');
+  }
+
+  .xl\:bg-geo {
+    background-image: url('../img/qgis1.jpg');
+  }
+
+  .xl\:bg-soon {
+    background-image: url('../img/soon.png');
+  }
+
   .xl\:from-transparent {
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -176311,6 +176385,18 @@ video {
 
   .\32xl\:bg-social {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000000 100%),url('../img/social.jpg');
+  }
+
+  .\32xl\:bg-php {
+    background-image: url('../img/php.jpg');
+  }
+
+  .\32xl\:bg-geo {
+    background-image: url('../img/qgis1.jpg');
+  }
+
+  .\32xl\:bg-soon {
+    background-image: url('../img/soon.png');
   }
 
   .\32xl\:from-transparent {

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Geolocation</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="../img/favicon/safari-pinned-tab.svg" color="#000000">
+    <link rel="shortcut icon" href="../img/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="msapplication-config" content="../img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+
+<header>
+    <nav id="site-menu"
+         class="z-40 flex flex-col md:flex-row w-full justify-between items-center px-4 sm:px-6 py-1 bg-gray-200 border-t-4 border-kleur fixed top-0 ">
+        <div class="w-full md:w-auto self-start md:self-center flex flex-row md:flex-none flex-no-wrap justify-between items-center lg:ml-2">
+            <div class="py-1 flex items-center">
+                <img src="../img/Icon.png" alt="Home" width="40" height="40">
+                <h2 class="text-2xl small-caps ml-4">Michiel Van Eynde</h2>
+            </div>
+            <button id="menuBtn" class="block md:hidden focus:outline-none p-2 ml-auto" onclick="NavToggle()">
+                <span class="fas fa-bars"></span>
+            </button>
+        </div>
+        <div id="menu"
+             class="w-full md:w-auto lg:mr-2 self-end md:flex flex-col md:flex-row h-full py-1 pb-4 md:py-0 md:pb-2 hidden text-center small-caps">
+            <p class="text-dark font-bold text-lg w-full md:w-auto md:px-4 py-2 md:py-1 md:pt-2">
+                <span class="hover:border-blue-800 hover:border-b-4 transition ease-in-out duration-300">Geolocation</span>
+            </p>
+            <a class="cursor-pointer text-dark font-bold text-lg w-full no-underline md:w-auto md:px-4 py-2 md:py-1 md:pt-2"
+               href="../index.html">Go Back
+            </a>
+        </div>
+    </nav>
+</header>
+
+<article class="flex items-center min-h-screen mt-20 mb-10 mx-8 md:mx-20">
+    <div>
+        <div class="grid grid-cols-1 md:grid-cols-2 mb-8">
+            <div class="text-justify md:mr-10">
+                <h2 class="text-2xl small-caps  border-blue-600 border-b-2 inline">Context</h2>
+                <p class="my-4">
+                    This project was made in my free time. My father cooperates with the archive of Geel and he wanted a
+                    way to show where a plot used to be located. This project is just in it's baby shoes, because there
+                    are 6 other maps left to reference.
+                </p>
+                <p class="mb-4 md:mb-0">
+                    When you click on a plot (green), house (red), road (brown), river or lake (blue) the programme will
+                    show corresponding data like: the name, size, owner and type. For now this project is only loacted
+                    in 1834, but when this is done more versions will be added.
+                </p>
+            </div>
+            <div class="mb-4 md:mb-0">
+                <img src="../img/qgis1.jpg" alt="Old and new map combined to find out where parcels where">
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2">
+            <div>
+                <img src="../img/qgis2.jpg" alt="Showing data of person who lived in 1834">
+            </div>
+            <div class="text-justify md:ml-10 mb-8">
+                <h2 class="text-2xl small-caps border-blue-600 border-b-2 inline">Conclusion</h2>
+                <p class="my-4">
+                    Working at this project I have learned how to reference an old map with a more up‐to‐date map or
+                    vice versa. I again learned how to interact with a client, even if it was my father (and indirect to
+                    the archive) we had to communicate and make decisions.
+                </p>
+                <p>
+                    This project was made in QGIS which has alot to offer. With this programme you can refercence, draw
+                    shapelayers, select data and a possibility to export it. Down below you can find a full demo of the
+                    project.
+                </p>
+
+                <div class="text-center mt-10">
+                    <a class="hover:no-underline text-3xl small-caps " href="../Map_data/index.html">
+                        View Result
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</article>
+<script src="../js/Navigation.js" defer></script>
+
+</body>
+</html>

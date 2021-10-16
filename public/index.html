@@ -4,25 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>PortFolio &boxv; Michiel Van Eynde</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#000000">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.5/dist/css/uikit.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="overflow-x-hidden">
+<body class="overflow-x-hidden bg-gray-50 snap-scroll">
 <header>
     <nav id="site-menu"
-         class="z-40 flex flex-col md:flex-row w-full justify-between items-center px-4 sm:px-6 py-1 bg-gray-100 border-t-4 border-kleur fixed top-0 ">
+         class="z-40 flex flex-col md:flex-row w-full justify-between items-center px-4 sm:px-6 py-1 bg-gray-200 border-t-4 border-kleur fixed top-0 ">
         <div class="w-full md:w-auto self-start md:self-center flex flex-row md:flex-none flex-no-wrap justify-between items-center lg:ml-2">
-            <p class="cursor-pointer no-underline py-1" onclick="Scroller('home')">
-                <img src="" alt="yeet" width="60" height="30">
-            </p>
+            <div class="py-1 flex items-center" onclick="Scroller('home')">
+                <img src="img/Icon.png" alt="Home" width="40" height="40">
+                <h2 class="text-2xl small-caps ml-4">Michiel Van Eynde</h2>
+            </div>
             <button id="menuBtn" class="block md:hidden focus:outline-none p-2 ml-auto" onclick="NavToggle()">
                 <span class="fas fa-bars"></span>
             </button>
         </div>
         <div id="menu"
-             class="w-full md:w-auto lg:mr-2 self-end md:flex flex-col md:flex-row h-full py-1 pb-4 md:py-0 md:pb-0 hidden text-center small-caps">
+             class="w-full md:w-auto lg:mr-2 self-end md:flex flex-col md:flex-row h-full py-1 pb-4 md:py-0 md:pb-2 hidden text-center small-caps">
             <p class="cursor-pointer text-dark font-bold text-lg w-full no-underline md:w-auto md:px-4 py-2 md:py-1 md:pt-2 "
                onclick="NavToggle(), Scroller('about')">
                 <span class="hover:border-blue-800 hover:border-b-4 transition ease-in-out duration-300">About Me</span>
@@ -46,107 +58,358 @@
     </nav>
 </header>
 
-<section id="home">
+<section id="home" class="snap-scroll-start">
     <div class="min-h-screen w-full relative flex justify-center items-center bg-home bg-cover bg-bottom bg-fixed mx-auto">
-        <h1 class="absolute parallax text-4xl md:text-6xl text-white tracking-widest small-caps p-4" data-speed="0.5">
-            Michiel Van
-            Eynde</h1>
-        <img src="img/svelte.png"
-             class="h-20 w-20 rounded-2xl object-contain absolute top-16 left-10 sm:top-28 sm:left-40 md:top-1/4 md:left-20 lg:top-1/5 lg:left-1/3 parallax"
-             data-speed="3" alt="">
-        <img src="img/github.png"
-             class="h-20 w-20 rounded-full object-contain absolute top-16 right-10 sm:top-28 sm:right-40 md:top-1/4 md:left-1/3 lg:top-1/2 lg:left-7/8 parallax"
-             data-speed="3" alt="">
-        <img src="img/css.png"
-             class="h-20 w-20 object-contain absolute top-48 left-10 sm:top-60 sm:left-40 md:top-1/4 md:left-auto md:right-1/3 lg:top-2/3 lg:left-1/3 parallax"
-             data-speed="-2"
-             alt="">
-        <img src="img/js.png"
-             class="h-20 w-20 object-contain absolute top-48 right-10 sm:top-60 sm:right-40 md:top-1/4 md:right-20 lg:top-1/4 lg:left-3/5 parallax"
-             data-speed="5" alt="">
+        <h1 class="absolute parallax text-4xl md:text-6xl text-white tracking-widest small-caps p-4 text-center"
+            data-speed="0.5">
+            Michiel Van Eynde
+        </h1>
 
-        <img src="img/html.png"
-             class="h-20 w-20 object-contain absolute bottom-24 right-10 sm:bottom-28 sm:right-40 md:top-2/3 md:right-auto md:left-20 lg:top-4/5 lg:left-1/5 parallax"
-             data-speed="-4"
-             alt="">
-        <img src="img/php.png"
-             class="h-28 w-28 object-contain absolute bottom-24 left-10 sm:bottom-28 sm:left-40 md:top-2/3 md:left-1/3 lg:top-3/5 lg:left-2/3 parallax"
-             data-speed="3"
-             alt="">
-        <img src="img/tailwind.png"
-             class="h-20 w-20 object-contain absolute bottom-56 right-10 sm:bottom-60 sm:right-40 md:top-2/3 md:right-1/3 lg:top-2/5 lg:left-1/8 parallax"
-             data-speed="-2"
-             alt="">
-        <img src="img/java.png"
-             class="h-20 w-20 rounded-full object-contain absolute bottom-56 left-10 sm:bottom-60 sm:left-40 md:top-2/3 md:left-auto md:right-20 lg:top-1/5 lg:left-7/8 parallax"
-             data-speed="-6" alt="">
-
-        <button class="p-2 mt-8 mb-40 sm:mb-12 bg-white rounded-xl text-2xl relative transform translate-y-96 lg:translate-y-72 bg-black">
+        <button id="btn" onclick="Scroller('about')"
+                class="p-2 mt-8 mb-40 sm:mb-12 bg-white hover:bg-gray-300 rounded-xl text-2xl text-black absolute bottom-10 sm:bottom-24">
             Continue
         </button>
     </div>
 </section>
 
-<section id="about">
-    <div class="min-h-screen bg-black border-t-2 border-pink-900">
+<article id="sideScroll" class="horizontal relative w-full h-full overflow-x-hidden">
+    <div class="pin-wrap h-screen flex">
+        <div class="animation-wrap h-screen flex to-right">
+            <section id="about" class="md:px-10 md:pl-20 flex items-center min-h-screen w-screen snap-scroll-start">
+                <div class="md:flex">
+                    <div class="w-2/3 m-auto">
+                        <h2 class="text-2xl small-caps md-2 md:mb-4">About Me</h2>
+                        <div class="text-justify">
+                            <p>
+                                I'm a 22 year old student interested in IT and everything to do with programming. That's
+                                why I chose to study Applied Informatics at Thomas More Geel. Just writing a program
+                                form scratch based on the needs of a friend, parent or client, is the thing I like the
+                                most.
+                            </p>
+                            <p class="mt-2 md:mt-8">
+                                Of course programming is not the only thing I do. My hobby is judo and here I can really
+                                be myself. Our club has a great community where everybody tries to help each other and
+                                every other year we will do a quiz to challenge each other.
+                            </p>
+                        </div>
+                    </div>
 
-    </div>
-</section>
-
-<section id="projects">
-    <div class="min-h-screen bg-black border-t-2 border-pink-900">
-    </div>
-</section>
-
-<section id="skills">
-    <div class="min-h-screen bg-black border-t-2 border-pink-900">
-    </div>
-</section>
-
-<section id="socials">
-    <div class="min-h-screen py-8 flex items-center justify-evenly bg-social bg-cover bg-no-repeat bg-bottom">
-        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
-            <div class="effect bg-white rounded-lg">
-                <div class="group h-48 w-80 transition-all duration-150">
-                    <p class="text-center">
-                        <i class="fab fa-twitter fa-2x mt-6 text-blue-600 group-hover:text-white transition-all duration-500"></i>
-                        <span class="block bg-blue-600 group-hover:bg-white h-1 my-6 mx-4 transition-all duration-500"></span>
-                    </p>
+                    <div class="w-1/3 m-auto md:ml-20 lg:ml-40 mt-4 md:mt-8">
+                        <img class="rounded-full w-auto h-auto" src="img/michiel.jpg" alt="Michiel van Eynde">
+                    </div>
                 </div>
-            </div>
+            </section>
+            <section id="projects"
+                     class="px-10 flex items-center min-h-screen w-screen overflow-auto snap-scroll-start">
 
-            <div class="effect bg-white rounded-lg">
-                <div class="group h-48 w-80 transition-all duration-150">
-                    <p class="text-center">
-                        <i class="fab fa-linkedin-in fa-2x mt-6 text-blue-600 group-hover:text-white transition-all duration-500"></i>
-                        <span class="block bg-blue-600 group-hover:bg-white h-1 my-6 mx-4 transition-all duration-500"></span>
-                    </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-y-4 md:gap-2 m-auto mt-20">
+                    <div class="rounded-xl overflow-hidden card">
+                        <a class="hover:no-underline" href="pages/php.html" target="blank">
+                            <div class="bg-php bg-cover bg-bottom h-72">
+                                <div class="w-full h-full flex items-end">
+                                    <div class="px-4 bg-black opacity-80 pb-2 text-white w-full transform lg:translate-y-8 transition-all text">
+                                        <div class="flex justify-between">
+                                            <h3 class="text-xl small-caps text-white font-semibold pb-2">
+                                                Project PHP
+                                            </h3>
+                                            <i class="fas fa-info-circle mt-2 hover:text-gray-500"></i>
+                                        </div>
+                                        <p class="w-full">A platform where you can sign up to give presentations</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="rounded-xl overflow-hidden card">
+                        <a class="hover:no-underline" href="pages/geo.html" target="blank">
+                            <div class="bg-geo bg-cover bg-bottom h-72">
+                                <div class="w-full h-full flex items-end">
+                                    <div class="px-4 bg-black opacity-80 text-white w-full pb-2 transform lg:translate-y-8 transition-all text">
+                                        <div class="flex justify-between">
+                                            <h3 class="text-xl small-caps text-white font-semibold pb-2">
+                                                Geolocation
+                                            </h3>
+                                            <i class="fas fa-info-circle mt-2 hover:text-gray-500"></i>
+                                        </div>
+                                        <p class="w-full">A project to show data from 1834 on modern maps</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="rounded-xl overflow-hidden cursor-not-allowed card md:mb-10">
+                        <a class="hover:no-underline" href="pages/lmsounds.html" target="blank">
+                            <div class="bg-soon bg-cover bg-bottom h-72">
+                                <div class="w-full h-full flex items-end">
+                                    <div class="px-4 bg-black opacity-80 text-white w-full pb-2 transform lg:translate-y-8 transition-all text">
+                                        <div class="flex justify-between">
+                                            <h3 class="text-xl small-caps text-white font-semibold pb-2">
+                                                Beverage Rater
+                                            </h3>
+                                            <i class="fas fa-info-circle mt-2 hover:text-gray-500"></i>
+                                        </div>
+                                        <p class="w-full">An application that you can use to find or rate drinks</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div class="rounded-xl overflow-hidden cursor-not-allowed card md:mb-10">
+                        <p class="hover:no-underline inline">
+                        <div class="bg-soon bg-cover bg-bottom h-72">
+                            <div class="w-full h-full flex items-end">
+                                <div class="px-4 bg-black opacity-80 text-white w-full pb-2 transform lg:translate-y-8 transition-all text">
+                                    <div class="flex justify-between">
+                                        <h3 class="text-xl small-caps text-white font-semibold pb-2">
+                                            Beverage Rater
+                                        </h3>
+                                        <i class="fas fa-info-circle mt-2 hover:text-gray-500"></i>
+                                    </div>
+                                    <p class="w-full">An application that you can use to find or rate drinks</p>
+                                </div>
+                            </div>
+                        </div>
+                        </p>
+                    </div>
+
+                    <div class="rounded-xl overflow-hidden cursor-not-allowed card mb-10">
+                        <p class="hover:no-underline inline">
+                        <div class="bg-soon bg-cover bg-center h-72">
+                            <div class="w-full h-full flex items-end">
+                                <div class="px-4 bg-black opacity-80 text-white w-full pb-2 transform lg:translate-y-8 transition-all text">
+                                    <div class="flex justify-between">
+                                        <h3 class="text-xl small-caps text-white font-semibold pb-2">
+                                            Movies
+                                        </h3>
+                                        <i class="fas fa-info-circle mt-2 hover:text-gray-500"></i>
+                                    </div>
+                                    <p class="w-full">A new way to check what movies are playing right now</p>
+                                </div>
+                            </div>
+                        </div>
+                        </p>
+                    </div>
                 </div>
-            </div>
+            </section>
+            <section id="skills" class="px-10 flex items-center min-h-screen w-screen snap-scroll-start">
+                <div class="mx-auto">
+                    <ul id="tabs" class="inline-flex mx-auto px-1 pt-2">
+                        <li class="px-4 py-2 -mb-px font-semibold text-gray-800 border-b-2 border-blue-400 rounded-t opacity-50 cursor-pointer">
+                            <p id="default-tab" data-tab="first">Skills</p>
+                        </li>
+                        <li class="px-4 py-2 font-semibold text-gray-800 rounded-t opacity-50 cursor-pointer">
+                            <p data-tab="second">Languages</p></li>
+                    </ul>
 
-            <div class="effect bg-white rounded-lg">
-                <div class="group h-48 w-80 transition-all duration-150">
-                    <p class="text-center">
-                        <i class="far fa-envelope fa-2x mt-6 text-blue-600 group-hover:text-white transition-all duration-500"></i>
-                        <span class="block bg-blue-600 group-hover:bg-white h-1 my-6 mx-4 transition-all duration-500"></span>
-                    </p>
+                    <div id="tab-contents" class="mt-6 h-1/3">
+                        <div id="first" class="md:p-4 transition-all w-full">
+                            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                                <div class="md:mx-4">
+                                    <div class="md:mx-4 flex">
+                                        <i class="fas fa-check mt-1 mr-2"></i>
+                                        <p>
+                                            PHP (Laravel)
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="md:mx-4">
+                                    <div class="md:mx-4 flex">
+                                        <i class="fas fa-check mt-1 mr-2"></i>
+                                        <p>
+                                            Javascript (React.js)
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="md:mx-4">
+                                    <div class="md:mx-4 flex">
+                                        <i class="fas fa-check mt-1 mr-2"></i>
+                                        <p>
+                                            HTML
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="md:mx-4">
+                                    <div class="md:mx-4 flex">
+                                        <i class="fas fa-check mt-1 mr-2"></i>
+                                        <p>
+                                            Java (Spring)
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="md:mx-4">
+                                    <div class="md:mx-4 flex">
+                                        <i class="fas fa-check mt-1 mr-2"></i>
+                                        <p>
+                                            SQL
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="md:mx-4">
+                                    <div class="md:mx-4 flex">
+                                        <i class="fas fa-check mt-1 mr-2"></i>
+                                        <p>
+                                            CSS, Tailwind
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="md:mx-4">
+                                    <div class="md:mx-4 flex">
+                                        <i class="fas fa-check mt-1 mr-2"></i>
+                                        <p>
+                                            Bootstrap, Sass
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="md:mx-4">
+                                    <div class="md:mx-4 flex">
+                                        <i class="fas fa-check mt-1 mr-2"></i>
+                                        <p>
+                                            Git
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="md:mx-4">
+                                    <div class="md:mx-4 flex">
+                                        <i class="fas fa-check mt-1 mr-2"></i>
+                                        <p>
+                                            UML
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="md:mx-4">
+                                    <div class="md:mx-4 flex">
+                                        <i class="fas fa-check mt-1 mr-2"></i>
+                                        <p>
+                                            Jira, Trello
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="md:mx-4">
+                                    <div class="md:mx-4 flex">
+                                        <i class="fas fa-check mt-1 mr-2"></i>
+                                        <p>
+                                            Kotlin
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="md:mx-4">
+                                    <div class="md:mx-4 flex">
+                                        <i class="fas fa-check mt-1 mr-2"></i>
+                                        <p>
+                                            JQuery
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="second" class="hidden p-4 transition-all w-full">
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                <div class="md:mx-4">
+                                    <div class="md:mx-4 flex">
+                                        <i class="fas fa-check mt-1 mr-2"></i>
+                                        <p>
+                                            Dutch (Mother Tongue)
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="md:mx-4">
+                                    <div class="md:mx-4 flex">
+                                        <i class="fas fa-check mt-1 mr-2"></i>
+                                        <p>
+                                            English (Good)
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="md:mx-4">
+                                    <div class="md:mx-4 flex">
+                                        <i class="fas fa-check mt-1 mr-2"></i>
+                                        <p>
+                                            French (Basic)
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-
-            <div class="effect bg-white rounded-lg">
-                <div class="group h-48 w-80 transition-all ease-in-out duration-150">
-                    <p class="text-center">
-                        <i class="fab fa-github fa-2x mt-6 text-blue-600 group-hover:text-white transition-all duration-500"></i>
-                        <span class="block bg-blue-600 group-hover:bg-white h-1 my-6 mx-4 transition-all duration-500"></span>
-                    </p>
-                </div>
-            </div>
-
+            </section>
         </div>
     </div>
-</section>
+</article>
+
+<footer id="socials" class="snap-scroll-start">
+    <div class="min-h-screen py-8 flex items-center justify-evenly bg-social bg-cover bg-fixed bg-no-repeat bg-bottom">
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
+            <div class="effect bg-white rounded-lg">
+                <a href="https://twitter.com/mve_1999" target="blank">
+                    <div class="group h-48 max-w-80 transition-all duration-150">
+                        <p class="text-center">
+                            <i class="fab fa-twitter fa-2x mt-6 text-blue-600 group-hover:text-white transition-all duration-500"></i>
+                            <span class="block bg-blue-600 group-hover:bg-white h-1 my-6 mx-4 transition-all duration-500"></span>
+                        </p>
+                        <p class="text-center pt-2 font-bold text-blue-600 group-hover:text-white transition-all duration-500">
+                            Twitter
+                        </p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="effect bg-white rounded-lg">
+                <a href="https://www.linkedin.com/in/michielve/" target="blank">
+                    <div class="group h-48 max-w-80 transition-all duration-150">
+                        <p class="text-center">
+                            <i class="fab fa-linkedin-in fa-2x mt-6 text-blue-600 group-hover:text-white transition-all duration-500"></i>
+                            <span class="block bg-blue-600 group-hover:bg-white h-1 my-6 mx-4 transition-all duration-500"></span>
+                        </p>
+                        <p class="text-center pt-2 font-bold text-blue-600 group-hover:text-white transition-all duration-500">
+                            LinkedIn
+                        </p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="effect bg-white rounded-lg cursor-pointer">
+                <div class="group h-48 max-w-80 transition-all duration-150">
+                    <a href="mailto:michiel.van.eynde123@gmail.com">
+                        <p class="text-center">
+                            <i class="far fa-envelope fa-2x mt-6 text-blue-600 group-hover:text-white transition-all duration-500"></i>
+                            <span class="block bg-blue-600 group-hover:bg-white h-1 my-6 mx-4 transition-all duration-500"></span>
+                        </p>
+                        <p class="text-center pt-2 px-4 font-bold text-blue-600 group-hover:text-white transition-all duration-500">
+                            michiel.van.eynde123@gmail.com
+                        </p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="effect bg-white rounded-lg">
+                <a href="https://github.com/Michiel-VE" target="blank">
+
+                    <div class="group h-48 max-w-80 transition-all ease-in-out duration-150">
+                        <p class="text-center">
+                            <i class="fab fa-github fa-2x mt-6 text-blue-600 group-hover:text-white transition-all duration-500"></i>
+                            <span class="block bg-blue-600 group-hover:bg-white h-1 my-6 mx-4 transition-all duration-500"></span>
+                        </p>
+                        <p class="text-center pt-2 font-bold text-blue-600 group-hover:text-white transition-all duration-500">
+                            GitHub
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
 
 <script src="js/Navigation.js" defer></script>
 <script src="js/Parallax.js" defer></script>
+<script src="js/Skills.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+<script src="js/Scrolling.js"></script>
+
 </body>
 </html>

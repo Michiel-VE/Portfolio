@@ -23,6 +23,10 @@ module.exports = {
             backgroundImage: theme => ({
                 'home': "url('../img/bg.jpg')",
                 'social': "linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000000 100%),url('../img/social.jpg')",
+                'php': "url('../img/php.jpg')",
+                'geo': "url('../img/qgis1.jpg')",
+                'soon': "url('../img/soon.png')",
+
             })
         },
     },

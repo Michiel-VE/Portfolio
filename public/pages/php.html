@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Project PHP</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="../img/favicon/safari-pinned-tab.svg" color="#000000">
+    <link rel="shortcut icon" href="../img/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="msapplication-config" content="../img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+
+<header>
+    <nav id="site-menu"
+         class="z-40 flex flex-col md:flex-row w-full justify-between items-center px-4 sm:px-6 py-1 bg-gray-200 border-t-4 border-kleur fixed top-0 ">
+        <div class="w-full md:w-auto self-start md:self-center flex flex-row md:flex-none flex-no-wrap justify-between items-center lg:ml-2">
+            <div class="py-1 flex items-center">
+                <img src="../img/Icon.png" alt="Home" width="40" height="40">
+                <h2 class="text-2xl small-caps ml-4">Michiel Van Eynde</h2>
+            </div>
+            <button id="menuBtn" class="block md:hidden focus:outline-none p-2 ml-auto" onclick="NavToggle()">
+                <span class="fas fa-bars"></span>
+            </button>
+        </div>
+        <div id="menu"
+             class="w-full md:w-auto lg:mr-2 self-end md:flex flex-col md:flex-row h-full py-1 pb-4 md:py-0 md:pb-2 hidden text-center small-caps">
+            <p class="text-dark font-bold text-lg w-full md:w-auto md:px-4 py-2 md:py-1 md:pt-2">
+                <span class="hover:border-blue-800 hover:border-b-4 transition ease-in-out duration-300">Project PHP</span>
+            </p>
+
+            <a class="cursor-pointer text-dark font-bold text-lg w-full no-underline md:w-auto md:px-4 py-2 md:py-1 md:pt-2"
+               href="../index.html">Go Back
+            </a>
+        </div>
+    </nav>
+</header>
+
+<article class="flex items-center min-h-screen mt-20 mx-8 md:mx-20">
+    <div>
+        <div class="grid grid-cols-1 md:grid-cols-2 mb-8">
+            <div class="text-justify md:mr-10">
+                <h2 class="text-2xl small-caps  border-blue-600 border-b-2 inline">Context</h2>
+                <p class="my-4">
+                    This is the follow up project of Requirement Analysis (RA). Now it was time to use our practical
+                    skills
+                    and turn the theory into a web application for a client. We weren't allowed to use our own RA
+                    project
+                    but we had use the documentary from another group. This way we learn both ways, the setup and the
+                    practical. This project was the first where I didn't made something for myself.
+                </p>
+                <p class="mb-4 md:mb-0">
+                    In this project we used Jira, a project management tool, Laravel, a PHP framework, Bootstrap, a css
+                    framework and AJAX, a set of web development techniques. With Jira we could easily keep an eye on
+                    what tasks were already completed, tasks we had to complete or who was working on what usecase.
+                    We used Laravel to create fast, quickly and simple webpages. To give everything a nice look
+                    Bootstrap was the answer.
+                </p>
+            </div>
+            <div class="mb-4 md:mb-0">
+                <img src="../img/signUp.jpg" alt="Image of signing up for a session as a teacher">
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2">
+            <div>
+                <img src="../img/session.jpg" alt="Showing schedule of event">
+            </div>
+            <div class="text-justify md:ml-10 mb-8">
+                <h2 class="text-2xl small-caps border-blue-600 border-b-2 inline mb-2">Conclusion</h2>
+                <p class="my-4">
+                    What I learned during this project is: communicating to our colleagues and to a client. If you can't
+                    make yourself clear, others won't we able to help you. Also, if your client doesn't understand you
+                    and vice versa the web application will not be at its full potential. Another thing I learned is to
+                    ask for help. We are learning and we don't know everything about PHP, Laravel or AJAX. During this
+                    project I created: the login, the student and docent pages and I took most of the styling on me.
+                </p>
+                <p>
+                    Overall I really liked this project. It was a really good teaser of what programming really is.
+                    Of course it had its ups and downs but thanks to this project I learned things I never knew before.
+                    Not only my hard skills but also my soft skills definitely had a boost.
+                </p>
+
+
+                <div class="text-center mt-10">
+                    <a class="hover:no-underline text-3xl small-caps " href="https://michielve.site/login">
+                        View Result
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</article>
+
+<script src="../js/Navigation.js" defer></script>
+</body>
+</html>
