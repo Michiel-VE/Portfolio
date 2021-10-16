@@ -18123,6 +18123,10 @@ video {
   background-image: url('../img/qgis1.jpg');
 }
 
+.bg-lm {
+  background-image: url('../img/lm_sounds.jpg');
+}
+
 .bg-soon {
   background-image: url('../img/soon.png');
 }
@@ -50087,6 +50091,10 @@ video {
     background-image: url('../img/qgis1.jpg');
   }
 
+  .sm\:bg-lm {
+    background-image: url('../img/lm_sounds.jpg');
+  }
+
   .sm\:bg-soon {
     background-image: url('../img/soon.png');
   }
@@ -81662,6 +81670,10 @@ video {
 
   .md\:bg-geo {
     background-image: url('../img/qgis1.jpg');
+  }
+
+  .md\:bg-lm {
+    background-image: url('../img/lm_sounds.jpg');
   }
 
   .md\:bg-soon {
@@ -113241,6 +113253,10 @@ video {
     background-image: url('../img/qgis1.jpg');
   }
 
+  .lg\:bg-lm {
+    background-image: url('../img/lm_sounds.jpg');
+  }
+
   .lg\:bg-soon {
     background-image: url('../img/soon.png');
   }
@@ -144818,6 +144834,10 @@ video {
     background-image: url('../img/qgis1.jpg');
   }
 
+  .xl\:bg-lm {
+    background-image: url('../img/lm_sounds.jpg');
+  }
+
   .xl\:bg-soon {
     background-image: url('../img/soon.png');
   }
@@ -176393,6 +176413,10 @@ video {
 
   .\32xl\:bg-geo {
     background-image: url('../img/qgis1.jpg');
+  }
+
+  .\32xl\:bg-lm {
+    background-image: url('../img/lm_sounds.jpg');
   }
 
   .\32xl\:bg-soon {
