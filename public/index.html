@@ -4,6 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="keywords"
+          content="Michiel Van Eynde, Webdesign, Coding, Projects"/>
+    <meta name="description"
+          content="Hello I'm Michiel and I'm a young programmer who likes to create projects. My interest outside coding are helping others, try to teach friends and from time to time gaming.">
+    <meta name="robots" content="index,follow">
+
+    <!--    og-->
+    <meta property="og:locale" content="en_us">
+    <meta property="og:site_name" content="Michiel Van Eynde &boxv; Portfolio">
+    <meta property="og:title" content="Michiel Van Eynde"/>
+    <meta property="og:description"
+          content="Hello I'm Michiel and I'm a young programmer who likes to create projects. My interest outside coding are helping others, try to teach friends and from time to time gaming.">
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://www.michielve.be"/>
+    <meta property="og:image" content="/img/Icon.png"/>
+    <meta property="og:image:type" content="image/png"/>
+    <meta property="og:image:width" content="192"/>
+    <meta property="og:image:height" content="192"/>
+    <meta property="og:image:alt" content="Michiel Van Eynde"/>
+
+    <!--    Twitter-->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.michielve.be">
+    <meta property="twitter:title" content="Michiel Van Eynde &boxv; Portfolio">
+    <meta property="twitter:description"
+          content="Hello I'm Michiel and I'm a young programmer who likes to create projects. My interest outside coding are helping others, try to teach friends and from time to time gaming.">
+    <meta property="twitter:image" content="/img/Icon.png">
+
     <title>PortFolio &boxv; Michiel Van Eynde</title>
 
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
@@ -17,19 +46,28 @@
     <meta name="theme-color" content="#ffffff">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.5/dist/css/uikit.min.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-90XNQ34BQ3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-90XNQ34BQ3');
+    </script>
 </head>
-<body class="overflow-x-hidden bg-gray-50 snap-scroll">
+<body class="overflow-x-hidden bg-gray-50">
 <header>
     <nav id="site-menu"
          class="z-40 flex flex-col md:flex-row w-full justify-between items-center px-4 sm:px-6 py-1 bg-gray-200 border-t-4 border-kleur fixed top-0 ">
         <div class="w-full md:w-auto self-start md:self-center flex flex-row md:flex-none flex-no-wrap justify-between items-center lg:ml-2">
             <div class="py-1 flex items-center" onclick="Scroller('home')">
                 <img src="img/Icon.png" alt="Home" width="40" height="40">
-                <h2 class="text-2xl small-caps ml-4">Michiel Van Eynde</h2>
+                <h2 class="text-2xl small-caps ml-4 cursor-pointer">Michiel Van Eynde</h2>
             </div>
-            <button id="menuBtn" class="block md:hidden focus:outline-none p-2 ml-auto" onclick="NavToggle()">
+            <button aria-label="Menu" id="menuBtn" class="block md:hidden focus:outline-none p-2 ml-auto"
+                    onclick="NavToggle()">
                 <span class="fas fa-bars"></span>
             </button>
         </div>
@@ -66,8 +104,9 @@
         </h1>
 
         <button id="btn" onclick="Scroller('about')"
-                class="p-2 mt-8 mb-40 sm:mb-12 bg-white hover:bg-gray-300 rounded-xl text-2xl text-black absolute bottom-10 sm:bottom-24">
+                class="p-4 mt-8 mb-40 sm:mb-12 bg-blue-600 text-white hover:text-blue-600 hover:bg-white transition-all rounded-xl text-2xl text-black absolute bottom-10 sm:bottom-24">
             Continue
+            <i class="fas fa-chevron-down"></i>
         </button>
     </div>
 </section>
@@ -75,7 +114,7 @@
 <article id="sideScroll" class="horizontal relative w-full h-full overflow-x-hidden">
     <div class="pin-wrap h-screen flex">
         <div class="animation-wrap h-screen flex to-right">
-            <section id="about" class="md:px-10 md:pl-20 flex items-center min-h-screen w-screen snap-scroll-start">
+            <section id="about" class="md:px-10 md:pl-20 flex items-center min-h-screen w-screen">
                 <div class="md:flex">
                     <div class="w-2/3 m-auto">
                         <h2 class="text-2xl small-caps md-2 md:mb-4">About Me</h2>
@@ -100,7 +139,7 @@
                 </div>
             </section>
             <section id="projects"
-                     class="px-10 flex items-center min-h-screen w-screen overflow-auto snap-scroll-start">
+                     class="px-10 flex items-center min-h-screen w-screen overflow-auto">
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-y-4 md:gap-2 m-auto mt-20">
                     <div class="rounded-xl overflow-hidden card">
@@ -176,33 +215,34 @@
                         </p>
                     </div>
 
-                    <div class="rounded-xl overflow-hidden cursor-not-allowed card mb-10">
-                        <p class="hover:no-underline inline">
-                        <div class="bg-soon bg-cover bg-center h-72">
-                            <div class="w-full h-full flex items-end">
-                                <div class="px-4 bg-black opacity-80 text-white w-full pb-2 transform lg:translate-y-8 transition-all text">
-                                    <div class="flex justify-between">
-                                        <h3 class="text-xl small-caps text-white font-semibold pb-2">
-                                            Movies
-                                        </h3>
-                                        <i class="fas fa-info-circle mt-2 hover:text-gray-500"></i>
-                                    </div>
-                                    <p class="w-full">A new way to check what movies are playing right now</p>
-                                </div>
-                            </div>
-                        </div>
-                        </p>
-                    </div>
+                    <!--                    <div class="rounded-xl overflow-hidden cursor-not-allowed card mb-10">-->
+                    <!--                        <p class="hover:no-underline inline">-->
+                    <!--                        <div class="bg-soon bg-cover bg-center h-72">-->
+                    <!--                            <div class="w-full h-full flex items-end">-->
+                    <!--                                <div class="px-4 bg-black opacity-80 text-white w-full pb-2 transform lg:translate-y-8 transition-all text">-->
+                    <!--                                    <div class="flex justify-between">-->
+                    <!--                                        <h3 class="text-xl small-caps text-white font-semibold pb-2">-->
+                    <!--                                            Movies-->
+                    <!--                                        </h3>-->
+                    <!--                                        <i class="fas fa-info-circle mt-2 hover:text-gray-500"></i>-->
+                    <!--                                    </div>-->
+                    <!--                                    <p class="w-full">A new way to check what movies are playing right now</p>-->
+                    <!--                                </div>-->
+                    <!--                            </div>-->
+                    <!--                        </div>-->
+                    <!--                        </p>-->
+                    <!--                    </div>-->
                 </div>
             </section>
-            <section id="skills" class="px-10 flex items-center min-h-screen w-screen snap-scroll-start">
-                <div class="mx-auto">
+            <section id="skills" class="px-10 flex items-center min-h-screen w-screen">
+                <div class="m-auto">
                     <ul id="tabs" class="inline-flex mx-auto px-1 pt-2">
                         <li class="px-4 py-2 -mb-px font-semibold text-gray-800 border-b-2 border-blue-400 rounded-t opacity-50 cursor-pointer">
                             <p id="default-tab" data-tab="first">Skills</p>
                         </li>
                         <li class="px-4 py-2 font-semibold text-gray-800 rounded-t opacity-50 cursor-pointer">
-                            <p data-tab="second">Languages</p></li>
+                            <p data-tab="second">Languages</p>
+                        </li>
                     </ul>
 
                     <div id="tab-contents" class="mt-6 h-1/3">
@@ -335,6 +375,32 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="flex">
+                        <div class="dropdown inline-block relative mx-auto mt-8">
+                            <button class="bg-blue-600 text-white transition-all font-semibold py-2 px-4 rounded rounded-b-none inline-flex items-center">
+                                <span class="mr-1">Download CV</span>
+                                <i class="fas fa-chevron-down pl-2"></i>
+                            </button>
+
+                            <ul class="dropdown-menu absolute opacity-0 w-full text-center transition-all">
+                                <li>
+                                    <a class="font-semibold bg-gray-200 text-black hover:bg-gray-300 hover:no-underline py-2 px-4 block"
+                                       download href="img/CV_Michiel_Van_Eynde_EN.pdf">
+                                        English
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="rounded-b-lg font-semibold bg-gray-200 text-black hover:bg-gray-300 hover:no-underline py-2 px-4 block"
+                                       download href="img/CV_Michiel_Van_Eynde.pdf">
+                                        Dutch
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
                 </div>
             </section>
         </div>
@@ -407,6 +473,7 @@
 <script src="js/Navigation.js" defer></script>
 <script src="js/Parallax.js" defer></script>
 <script src="js/Skills.js" defer></script>
+<script src="js/Scroller.js" defer></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
 <script src="js/Scrolling.js"></script>

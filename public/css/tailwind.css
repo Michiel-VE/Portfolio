@@ -27,11 +27,6 @@
 .card:hover .text{
     transform: translateY(0);
 }
-
-.snap-scroll{
-    scroll-snap-type: x mandatory;
-}
-
-.snap-scroll-start{
-    scroll-snap-align: start;
+.dropdown:hover .dropdown-menu {
+    opacity: 100%;
 }

@@ -2,6 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="keywords"
+          content="Michiel Van Eynde, Webdesign, Coding, Projects, LM&dash;Sounds, DJ, Kempen"/>
+    <meta name="description"
+          content="In this project I made a website to boost a friends DJ's carrier.">
+    <meta name="robots" content="index,follow">
+
+    <!--    og-->
+    <meta property="og:locale" content="en_us">
+    <meta property="og:site_name" content="Michiel Van Eynde &boxv; LM&dash;Sounds">
+    <meta property="og:title" content="Michiel Van Eynde &boxv; LM&dash;Sounds"/>
+    <meta property="og:description"
+          content="In this project I made a website to boost a friends DJ's carrier.">
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://www.michielve.be/pages/lmsounds.html"/>
+    <meta property="og:image" content="/img/Icon.png"/>
+    <meta property="og:image:type" content="image/png"/>
+    <meta property="og:image:width" content="192"/>
+    <meta property="og:image:height" content="192"/>
+    <meta property="og:image:alt" content="Michiel Van Eynde"/>
+
+    <!--    Twitter-->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.michielve.be/pages/lmsounds.html">
+    <meta property="twitter:title" content="Michiel Van Eynde &boxv; LM&dash;Sounds">
+    <meta property="twitter:description"
+          content="In this project I made a website to boost a friends DJ's carrier.">
+    <meta property="twitter:image" content="/img/Icon.png">
+
     <title>LM&dash;Sounds</title>
 
     <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
@@ -19,7 +50,6 @@
 </head>
 <body>
 
-
 <header>
     <nav id="site-menu"
          class="z-40 flex flex-col md:flex-row w-full justify-between items-center px-4 sm:px-6 py-1 bg-gray-200 border-t-4 border-kleur fixed top-0 ">
@@ -28,14 +58,15 @@
                 <img src="../img/Icon.png" alt="Home" width="40" height="40">
                 <h2 class="text-2xl small-caps ml-4">Michiel Van Eynde</h2>
             </div>
-            <button id="menuBtn" class="block md:hidden focus:outline-none p-2 ml-auto" onclick="NavToggle()">
+            <button aria-label="Menu" id="menuBtn" class="block md:hidden focus:outline-none p-2 ml-auto"
+                    onclick="NavToggle()">
                 <span class="fas fa-bars"></span>
             </button>
         </div>
         <div id="menu"
              class="w-full md:w-auto lg:mr-2 self-end md:flex flex-col md:flex-row h-full py-1 pb-4 md:py-0 md:pb-2 hidden text-center small-caps">
             <p class="text-dark font-bold text-lg w-full md:w-auto md:px-4 py-2 md:py-1 md:pt-2">
-                <span class="hover:border-blue-800 hover:border-b-4 transition ease-in-out duration-300">Project PHP</span>
+                <span class="hover:border-blue-800 hover:border-b-4 transition ease-in-out duration-300">LM&dash;Sounds</span>
             </p>
 
             <a class="cursor-pointer text-dark font-bold text-lg w-full no-underline md:w-auto md:px-4 py-2 md:py-1 md:pt-2"
@@ -62,7 +93,7 @@
                     him to check and get feedback.
                 </p>
                 <p class="mb-4 md:mb-0">
-                    The next step was developing the website with my other friend Maxim. First thing was getting the
+                    The next step was developing the website with my other Maxim. First thing was getting the
                     basics, what really had to be integrated into the website and what could be nice to have but not
                     necessary. We always tried to keep Lander informed on our progress.
                 </p>
@@ -72,14 +103,14 @@
             </div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2">
+        <div class="grid grid-cols-1 md:grid-cols-2 mb-8">
             <div>
                 <img src="../img/lm_2.jpg" alt="Showing schedule of event">
             </div>
             <div class="text-justify md:ml-10 mb-8">
                 <h2 class="text-2xl small-caps border-blue-600 border-b-2 inline mb-2">Conclusion</h2>
                 <p class="my-4">
-                    What I learned is: communicating to your customer (in this case friend). Lander did not have much
+                    What I learned is: communicating to your customer (in this case a friend). Lander did not have much
                     knowledge so if you need to explain something, you had to be sure that he would understand it. Also
                     keeping the client up to date is nice. That way he knows if you are making progress and just have
                     almost instant feedback.
@@ -97,7 +128,8 @@
 
 
                 <div class="text-center mt-10">
-                    <a onclick="return false" class="hover:no-underline text-3xl small-caps cursor-not-allowed" href="https://michielve.site/login">
+                    <a target="_blank" class="hover:no-underline text-3xl small-caps"
+                       href="https://michielve.store/lander/">
                         View Result
                     </a>
                 </div>

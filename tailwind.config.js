@@ -3,6 +3,7 @@ module.exports = {
         enabled: false,
         content: [
             './public/*.html',
+            './public/pages/*.html',
         ],
     },
     darkMode: false, // or 'media' or 'class'
@@ -28,11 +29,13 @@ module.exports = {
                 'lm': "url('../img/lm_sounds.jpg')",
                 'soon': "url('../img/soon.png')",
 
-            })
+            }),
         },
     },
     variants: {
-        extend: {},
+        extend: {
+            borderRadius: ['hover'],
+        },
     },
     plugins: [],
 }
