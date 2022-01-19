@@ -10,7 +10,6 @@
     "postcss": "^8.3.6",
     "tailwindcss": "^2.2.7"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "compile": "npx tailwindcss build -i public/css/tailwind.css -o public/css/style.css"

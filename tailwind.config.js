@@ -27,6 +27,7 @@ module.exports = {
                 'php': "url('../img/php.jpg')",
                 'geo': "url('../img/qgis1.jpg')",
                 'lm': "url('../img/lm_sounds.jpg')",
+                'br': "url('../img/br_login.jpg')",
                 'soon': "url('../img/soon.png')",
 
             }),

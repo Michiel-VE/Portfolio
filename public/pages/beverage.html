@@ -6,19 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <meta name="keywords"
-          content="Michiel Van Eynde, Webdesign, Coding, Projects, Geolocation, Maps"/>
+          content="Michiel Van Eynde, Webdesign, Coding, Projects, Beverage Rater, Database, Firebase"/>
     <meta name="description"
-          content="In this project I collected data from 1834 and used it to show how much a city changed through the years.">
+          content="My first full react site turned in a PWA, it is accessible on browsers but styling was made for phones.">
     <meta name="robots" content="index,follow">
 
     <!--    og-->
     <meta property="og:locale" content="en_us">
-    <meta property="og:site_name" content="Michiel Van Eynde &boxv; Geolocation">
-    <meta property="og:title" content="Michiel Van Eynde &boxv; Geolocation"/>
+    <meta property="og:site_name" content="Michiel Van Eynde &boxv; Beverage Rater">
+    <meta property="og:title" content="Michiel Van Eynde &boxv; Beverage Rater"/>
     <meta property="og:description"
-          content="In this project I collected data from 1834 and used it to show how much a city changed through the years.">
+          content="My first full react site turned in a PWA, it is accessible on browsers but styling was made for phones.">
     <meta property="og:type" content="website"/>
-    <meta property="og:url" content="https://www.michielve.be/pages/geo.html"/>
+    <meta property="og:url" content="https://www.michielve.be/pages/beverage.html"/>
     <meta property="og:image" content="/img/Icon.png"/>
     <meta property="og:image:type" content="image/png"/>
     <meta property="og:image:width" content="192"/>
@@ -27,13 +27,13 @@
 
     <!--    Twitter-->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://www.michielve.be/pages/geo.html">
-    <meta property="twitter:title" content="Michiel Van Eynde &boxv; Geolocation">
+    <meta property="twitter:url" content="https://www.michielve.be/pages/berverage.html">
+    <meta property="twitter:title" content="Michiel Van Eynde &boxv; Beverage Rater">
     <meta property="twitter:description"
-          content="In this project I collected data from 1834 and used it to show how much a city changed through the years.">
+          content="My first full react site turned in a PWA, it is accessible on browsers but styling was made for phones.">
     <meta property="twitter:image" content="/img/Icon.png">
 
-    <title>Geolocation</title>
+    <title>Beverage Rater</title>
 
     <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
@@ -67,8 +67,9 @@
         <div id="menu"
              class="w-full md:w-auto lg:mr-2 self-end md:flex flex-col md:flex-row h-full py-1 pb-4 md:py-0 md:pb-2 hidden text-center small-caps">
             <p class="text-dark font-bold text-lg w-full md:w-auto md:px-4 py-2 md:py-1 md:pt-2">
-                <span class="hover:border-blue-800 hover:border-b-4 transition ease-in-out duration-300">Geolocation</span>
+                <span class="hover:border-blue-800 hover:border-b-4 transition ease-in-out duration-300">Beverage Rater</span>
             </p>
+
             <a class="cursor-pointer text-dark font-bold text-lg w-full no-underline md:w-auto md:px-4 py-2 md:py-1 md:pt-2"
                href="../index.html">Go Back
             </a>
@@ -82,40 +83,42 @@
             <div class="text-justify md:mr-10">
                 <h2 class="text-2xl small-caps  border-blue-600 border-b-2 inline">Context</h2>
                 <p class="my-4">
-                    This project was made in my free time. My father cooperates with the archive of Geel and he wanted a
-                    way to show where a plot used to be located. This project is just in it's baby shoes, because there
-                    are 6 other maps left to reference.
+                    This project was made for the Mobile Project course while I was in Finland. The goal was to use all
+                    the things we had learned and make a mobile app out of it.
                 </p>
                 <p class="mb-4 md:mb-0">
-                    When you click on a plot (green), house (red), road (brown), river or lake (blue) the programme will
-                    show corresponding data like: the name, size, owner and type. For now this project is only loacted
-                    in 1834, but when this is done more versions will be added.
+                    The plan of attack was to first get a global idea. This was pretty easy because there were already a
+                    few ideas lying around. The next step was to set up a MoSCoW schema. With the assignment given, it
+                    was just making a checklist. Before the coding, a sketch had to be made. Not having a lot of
+                    experience in this field it was a bit of a harder task. At first, I started on paper, so I had a
+                    basic idea. Later the project was drawn in Figma to get the correct colors and spacings.
                 </p>
             </div>
-            <div class="mb-4 md:mb-0">
-                <img src="../img/qgis1.jpg" alt="Old and new map combined to find out where parcels where">
+            <div class="mb-4 md:mb-0 m-auto">
+                <img src="../img/br_home.jpg" alt="Overview of all saved drinks">
             </div>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2">
-            <div>
-                <img src="../img/qgis2.jpg" alt="Showing data of person who lived in 1834">
+            <div class="m-auto">
+                <img src="../img/br_details.jpg" alt="Details page of beverage rater app">
             </div>
             <div class="text-justify md:ml-10 mb-8">
-                <h2 class="text-2xl small-caps border-blue-600 border-b-2 inline">Conclusion</h2>
+                <h2 class="text-2xl small-caps border-blue-600 border-b-2 inline mb-2">Conclusion</h2>
                 <p class="my-4">
-                    Working at this project I have learned how to reference an old map with a more up‐to‐date map or
-                    vice versa. I again learned how to interact with a client, even if it was my father (and indirect to
-                    the archive) we had to communicate and make decisions.
+                    The project wasn't too hard for me, once I had figured out how everything worked the programming
+                    went like a charm. Of course there were a few hiccups but after a day (if it was a big one) it was
+                    solved.
                 </p>
                 <p>
-                    This project was made in QGIS which has alot to offer. With this programme you can refercence, draw
-                    shapelayers, select data and a possibility to export it. Down below you can find a full demo of the
-                    project.
+                    Thanks to this project I really learned how to sketch an idea and make it user-friendly, so it can
+                    be easily accessible for them. Also, it was important to know what you need in an app. If you plan
+                    to put everything in it, you won't have time to do it or your app is full of bugs.
                 </p>
 
+
                 <div class="text-center mt-10">
-                    <a class="hover:no-underline text-3xl small-caps " href="../Map_data/index.html">
+                    <a class="hover:no-underline text-3xl small-caps " href="https://beverage-rat.firebaseapp.com/">
                         View Result
                     </a>
                 </div>
@@ -124,7 +127,7 @@
     </div>
 
 </article>
-<script src="../js/Navigation.js" defer></script>
 
+<script src="../js/Navigation.js" defer></script>
 </body>
 </html>
