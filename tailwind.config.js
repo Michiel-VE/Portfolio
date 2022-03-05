@@ -29,6 +29,7 @@ module.exports = {
                 'lm': "url('../img/lm_sounds.jpg')",
                 'br': "url('../img/br_login.jpg')",
                 'soon': "url('../img/soon.png')",
+                'skill': "linear-gradient(180deg, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0.2) 100%),url('../img/tree.jpg')",
 
             }),
         },

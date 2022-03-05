@@ -18495,6 +18495,10 @@ video {
   background-image: url('../img/soon.png');
 }
 
+.bg-skill {
+  background-image: linear-gradient(180deg, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0.2) 100%),url('../img/tree.jpg');
+}
+
 .from-transparent {
   --tw-gradient-from: transparent;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -50822,6 +50826,10 @@ video {
     background-image: url('../img/soon.png');
   }
 
+  .sm\:bg-skill {
+    background-image: linear-gradient(180deg, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0.2) 100%),url('../img/tree.jpg');
+  }
+
   .sm\:from-transparent {
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -82765,6 +82773,10 @@ video {
 
   .md\:bg-soon {
     background-image: url('../img/soon.png');
+  }
+
+  .md\:bg-skill {
+    background-image: linear-gradient(180deg, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0.2) 100%),url('../img/tree.jpg');
   }
 
   .md\:from-transparent {
@@ -114712,6 +114724,10 @@ video {
     background-image: url('../img/soon.png');
   }
 
+  .lg\:bg-skill {
+    background-image: linear-gradient(180deg, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0.2) 100%),url('../img/tree.jpg');
+  }
+
   .lg\:from-transparent {
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -146657,6 +146673,10 @@ video {
     background-image: url('../img/soon.png');
   }
 
+  .xl\:bg-skill {
+    background-image: linear-gradient(180deg, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0.2) 100%),url('../img/tree.jpg');
+  }
+
   .xl\:from-transparent {
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -178600,6 +178620,10 @@ video {
 
   .\32xl\:bg-soon {
     background-image: url('../img/soon.png');
+  }
+
+  .\32xl\:bg-skill {
+    background-image: linear-gradient(180deg, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0.2) 100%),url('../img/tree.jpg');
   }
 
   .\32xl\:from-transparent {
