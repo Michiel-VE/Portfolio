@@ -1,4 +1,4 @@
-/*! tailwindcss v2.2.7 | MIT License | https://tailwindcss.com */
+/*! tailwindcss v2.2.19 | MIT License | https://tailwindcss.com */
 
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 
@@ -475,6 +475,18 @@ button,
   cursor: pointer;
 }
 
+/**
+ * Override legacy focus reset from Normalize with modern Firefox focus styles.
+ *
+ * This is actually an improvement over the new defaults in Firefox in our testing,
+ * as it triggers the better focus styles even for links, which still use a dotted
+ * outline in Firefox by default.
+ */
+
+:-moz-focusring {
+  outline: auto;
+}
+
 table {
   border-collapse: collapse;
 }
@@ -724,6 +736,7 @@ video {
 }
 
 .sticky {
+  position: -webkit-sticky;
   position: sticky;
 }
 
@@ -10330,6 +10343,20 @@ video {
   }
 }
 
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    -webkit-animation-timing-function: cubic-bezier(0.8,0,1,1);
+            animation-timing-function: cubic-bezier(0.8,0,1,1);
+  }
+
+  50% {
+    transform: none;
+    -webkit-animation-timing-function: cubic-bezier(0,0,0.2,1);
+            animation-timing-function: cubic-bezier(0,0,0.2,1);
+  }
+}
+
 .animate-none {
   -webkit-animation: none;
           animation: none;
@@ -10353,6 +10380,11 @@ video {
 .animate-bounce {
   -webkit-animation: bounce 1s infinite;
           animation: bounce 1s infinite;
+}
+
+.animate-bounce-slow {
+  -webkit-animation: bounce 3s linear infinite;
+          animation: bounce 3s linear infinite;
 }
 
 .cursor-auto {
@@ -18480,7 +18512,7 @@ video {
 }
 
 .bg-geo {
-  background-image: url('../img/qgis1.jpg');
+  background-image: url('../img/qgis.jpg');
 }
 
 .bg-lm {
@@ -33121,6 +33153,7 @@ video {
   }
 
   .sm\:sticky {
+    position: -webkit-sticky;
     position: sticky;
   }
 
@@ -42686,6 +42719,11 @@ video {
             animation: bounce 1s infinite;
   }
 
+  .sm\:animate-bounce-slow {
+    -webkit-animation: bounce 3s linear infinite;
+            animation: bounce 3s linear infinite;
+  }
+
   .sm\:cursor-auto {
     cursor: auto;
   }
@@ -50811,7 +50849,7 @@ video {
   }
 
   .sm\:bg-geo {
-    background-image: url('../img/qgis1.jpg');
+    background-image: url('../img/qgis.jpg');
   }
 
   .sm\:bg-lm {
@@ -65070,6 +65108,7 @@ video {
   }
 
   .md\:sticky {
+    position: -webkit-sticky;
     position: sticky;
   }
 
@@ -74635,6 +74674,11 @@ video {
             animation: bounce 1s infinite;
   }
 
+  .md\:animate-bounce-slow {
+    -webkit-animation: bounce 3s linear infinite;
+            animation: bounce 3s linear infinite;
+  }
+
   .md\:cursor-auto {
     cursor: auto;
   }
@@ -82760,7 +82804,7 @@ video {
   }
 
   .md\:bg-geo {
-    background-image: url('../img/qgis1.jpg');
+    background-image: url('../img/qgis.jpg');
   }
 
   .md\:bg-lm {
@@ -97019,6 +97063,7 @@ video {
   }
 
   .lg\:sticky {
+    position: -webkit-sticky;
     position: sticky;
   }
 
@@ -106584,6 +106629,11 @@ video {
             animation: bounce 1s infinite;
   }
 
+  .lg\:animate-bounce-slow {
+    -webkit-animation: bounce 3s linear infinite;
+            animation: bounce 3s linear infinite;
+  }
+
   .lg\:cursor-auto {
     cursor: auto;
   }
@@ -114709,7 +114759,7 @@ video {
   }
 
   .lg\:bg-geo {
-    background-image: url('../img/qgis1.jpg');
+    background-image: url('../img/qgis.jpg');
   }
 
   .lg\:bg-lm {
@@ -128968,6 +129018,7 @@ video {
   }
 
   .xl\:sticky {
+    position: -webkit-sticky;
     position: sticky;
   }
 
@@ -138533,6 +138584,11 @@ video {
             animation: bounce 1s infinite;
   }
 
+  .xl\:animate-bounce-slow {
+    -webkit-animation: bounce 3s linear infinite;
+            animation: bounce 3s linear infinite;
+  }
+
   .xl\:cursor-auto {
     cursor: auto;
   }
@@ -146658,7 +146714,7 @@ video {
   }
 
   .xl\:bg-geo {
-    background-image: url('../img/qgis1.jpg');
+    background-image: url('../img/qgis.jpg');
   }
 
   .xl\:bg-lm {
@@ -160917,6 +160973,7 @@ video {
   }
 
   .\32xl\:sticky {
+    position: -webkit-sticky;
     position: sticky;
   }
 
@@ -170482,6 +170539,11 @@ video {
             animation: bounce 1s infinite;
   }
 
+  .\32xl\:animate-bounce-slow {
+    -webkit-animation: bounce 3s linear infinite;
+            animation: bounce 3s linear infinite;
+  }
+
   .\32xl\:cursor-auto {
     cursor: auto;
   }
@@ -178607,7 +178669,7 @@ video {
   }
 
   .\32xl\:bg-geo {
-    background-image: url('../img/qgis1.jpg');
+    background-image: url('../img/qgis.jpg');
   }
 
   .\32xl\:bg-lm {
